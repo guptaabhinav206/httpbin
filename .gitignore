@@ -7,3 +7,7 @@ dist/
 .tox
 *.egg-info
 *.swp
+Makefile
+Envfile
+.env
+docker-compose.yml

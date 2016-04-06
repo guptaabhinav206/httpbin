@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -eu
+set -o pipefail
+
+# remove ignored files
+git clean -fdX
+
+# bootstrap build tools
+docker pull docker.sendgrid.net/sendgrid/bootstrap
+docker run --rm --volume ${PWD}:/data docker.sendgrid.net/sendgrid/bootstrap
+
+# source Envfile to write .env
+#source Envfile
+
+#make jenkins

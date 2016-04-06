@@ -7,7 +7,7 @@ long_description = io.open(
 
 setup(
     name="httpbin",
-    version="0.5.0",
+    version="0.6.0",
     description="HTTP Request and Response Service",
     long_description=long_description,
 
@@ -22,6 +22,7 @@ setup(
     license='MIT',
 
     classifiers=[
+         'Private :: Do Not Upload',
          'Development Status :: 5 - Production/Stable',
          'Intended Audience :: Developers',
          'Natural Language :: English',

@@ -1,0 +1,14 @@
+{
+  "name": "httpbin",
+  "org": "sendgrid",
+  "wf_version": "1.0.0",
+  "package": {
+    "build_output": "httpbin",
+    "rpm_input": "current",
+    "rpm_output_dir": "ci-repo"
+  },
+  "jenkins" : {
+    "master" : "delivery/httpbin",
+    "pr" : "delivery/httpbin"
+  }
+}
